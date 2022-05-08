@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap');
+$main: #0553a0;
+$sec: #eee;
+$third: #171717;
+*{  
+    box-sizing: border-box;
+    margin: 0mm;
+    padding: 0mm;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+/* 1rem == 10px  */
+body{
+  background-color: $main;
+  color: $sec;
+}
+.App{
+  padding: 30px;
+}
+h2{
+  font-weight: 400;
+}
+select{
+  border: 3px solid $sec;
+  background-color: transparent;
+  color: $sec;
+  border-radius: 5px;
+  padding: 7px 20px 7px 10px;
+  margin-top: 20px;
+  font-weight: 700;
+  & > option{
+    color: $sec;
+    background-color: $third;
+    font-weight: 400;
+    height: 30px;
+  }
+}
+.qr-reader{
+  width: 80vw;
+  height: auto;
+  margin-top: 30px;
+  & > section{
+    border-radius: 10px;
+    & > div{
+      box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 0px 5px inset !important;
+    }
+  }
+}
